@@ -1,0 +1,338 @@
+/* General styling */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(1, 5, 40);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(21, 11, 67);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+.left img {
+    width: 35px;
+    height: auto;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+    align-items: center;
+}
+
+.leftSection {
+    font-size: 3rem;
+    white-space: nowrap;
+}
+
+.firstSection > div {
+    width: 30%;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.purple {
+    color: rgb(164, 81, 241);
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: rgb(157, 78, 247);
+    font-size: 1.02rem;
+}
+
+#element {
+    color: rgb(164, 81, 241);
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 82vh;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.textGrey {
+    color: gray;
+}
+
+.secondSection .experience {
+    display: flex;
+    flex-wrap: wrap; /* Add flex-wrap to wrap items to the next line */
+    align-items: center;
+    margin-top: 40px;
+}
+
+.secondSection .experience h2 {
+    color: rgb(164, 81, 241);
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.secondSection .experience p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.logoWeb {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.logoinsta {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.logob {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.thirdSection {
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.thirdSection h1 {
+    font-size: 1.9rem;
+    color: white;
+}
+
+.thirdSection form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form */
+}
+
+.thirdSection form label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.thirdSection form input[type="text"],
+.thirdSection form input[type="email"],
+.thirdSection form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 100%; /* Set width to 100% */
+}
+
+.thirdSection form input[type="text"]:focus,
+.thirdSection form input[type="email"]:focus,
+.thirdSection form textarea:focus {
+    outline: none;
+    border-color: rgb(164, 81, 241);
+}
+
+.thirdSection form textarea {
+    height: 150px;
+}
+
+.thirdSection form button {
+    padding: 10px 20px;
+    background-color: rgb(164, 81, 241);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Set width to 100% */
+}
+
+.thirdSection form button:hover {
+    background-color: rgb(157, 78, 247);
+}
+
+footer {
+    background-color: rgb(21, 11, 67);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    filter: grayscale(1);
+
+}
+.social-links a :hover{
+    filter:grayscale(0);
+}
+
+.social-links img {
+    width: 20px;
+    height: auto;
+}
+.social-links img :hover {
+    width: 40px;
+
+}
+
+/* Media Queries */
+
+/* For devices up to 768px (tablets and smaller phones) */
+@media only screen and (max-width: 768px) {
+    nav .left {
+        font-size: 1rem;
+    }
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .firstSection > div {
+        width: 90%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .rightSection img {
+        width: 40%;
+    }
+
+    .secondSection {
+        padding: 0 20px;
+    }
+
+    .secondSection .experience {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .thirdSection form {
+        margin: 720px 0px 50px 0px;
+    }
+
+    .thirdSection .navi {
+        font-size: 10px;
+        margin: 2px 0px;
+    }
+}
+
+/* For devices up to 375px (iPhone 12 and smaller phones) */
+@media only screen and (max-width: 375px) {
+    .right ul li a{
+        padding: 0% 0 0 0;
+        margin: 0%;
+    }
+
+    .leftSection {
+        font-size: 1rem;
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+    }
+
+    .secondSection .experience h2 {
+        font-size: 1.3rem;
+    }
+
+    .secondSection .experience p {
+        font-size: 1rem;
+    }
+
+    .thirdSection form input[type="text"],
+    .thirdSection form input[type="email"],
+    .thirdSection form textarea {
+        width: 100%;
+    }
+
+    .thirdSection form button {
+        width: 100%;
+    }
+
+    .thirdSection form {
+        margin: 850px 0px 50px 0px;
+    }
+
+    .thirdSection .navi {
+        font-size: 10px;
+        margin: 2px 0px;
+    }
+}
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    filter: grayscale(1);
+    transition: transform 0.3s ease; /* Add transition for smooth zoom */
+}
+
+.social-links a:hover {
+    filter: grayscale(0);
+    transform: scale(1.2); /* Zoom effect */
+}
+
+.social-links img {
+    width: 20px;
+    height: auto;
+    transition: width 0.3s ease; /* Add transition for smooth zoom */
+}
+
+.social-links img:hover {
+    width: 25px; /* Zoom effect */
+}
+
